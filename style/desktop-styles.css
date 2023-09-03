@@ -1,0 +1,531 @@
+/* CSS untuk halaman profile Saya */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+}
+
+/* header navigation bar */
+header {
+    background-color: #d8d8d87c;
+    color: white;
+    padding: 10px 5%;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    transition: transform 1s ease-in-out;
+    z-index: 100;
+}
+
+.scroll-up {
+    transform: translateY(-100%);
+}
+
+#mainHeader{
+    display: flex;
+    justify-content: space-between;
+    object-fit: contain;
+    overflow: auto;
+    
+}
+
+.head-id-pp{
+    display: flex;
+    align-items: center;
+}
+
+.head-id-pp p{
+    margin-left: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navigation-bar-icon{
+    width: 60px;
+    height: 60px;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    outline: 2px solid white;
+}
+
+.navigation-bar-icon img{
+    width: 80px;
+    height: 80px;
+}
+
+.navigation-bar-link{
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+}
+
+.navigation-bar-link a {
+    height: 35px;
+    width: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1c1c1c;
+    border-top :3px solid rgb(255, 255, 255);
+    border-bottom :3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+
+    margin: 1px 5%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.navigation-bar-link a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ff0000;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); 
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navigation-bar-link a:hover::after {
+    transform: scaleX(1); 
+    transform-origin: left;
+}
+
+/* end of navigation bar and header */
+
+/* content main */
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100%;
+    height: 731.2px;
+    align-items: center;
+    padding: 70px 10% 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+/* this is home section */
+#home{
+    background-image:url('../images/bg01.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 10vh 0;
+}
+
+.content-home{
+    color: white;
+    background-color: #21212195;
+    width: 100%;
+    height: 20vw;
+    padding: 2.5vw 10vw;
+}
+
+.content-home:hover{
+    cursor: default;
+}
+
+.content-home h1{
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.content-home h3{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.content-home p{
+    font-size: 1vw;
+    margin: 1vw 0 1.5vw;
+}
+
+.morebutton{
+    margin-left: 0.3vw;
+    width: 10vw;
+    height: 3vw;
+    display: inline-flex;
+    background: #bcbcbc;
+    border-radius: 10vw;
+    font-size: 1.5vw;
+    color: #242424;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5vw;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: ease-in-out 0.3s;
+    outline: 0.2vw solid rgb(255, 255, 255);
+    outline-offset: 0.3vw;
+    transition-delay: 1s;
+}
+
+.morebutton:hover {
+    transition-delay: 0s;
+    background: #a30000;
+    outline-color: #a30000;
+    color: white;
+    outline-offset: 0.6vw;
+}
+
+#home-img{
+    width: 30vw; /* Ukuran gambar */
+    height: 30vw; /* Ukuran gambar */
+    background-image: url('../images/avatar-redO.png'); /* Ganti dengan path gambar Anda */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 365.5px;
+    right: 5vw;
+    transform: translate(0, -50%);
+    z-index: 11;
+    filter: grayscale(10) brightness(1.5);
+    transition: ease-in-out 0.6s;
+    opacity: 0.9;
+}
+
+.morebutton:hover~#home-img{
+    transition-delay: 0.5s;
+    opacity: 1;
+    filter: none;
+}
+
+
+
+#red-rings{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 387.43px;
+    right: 18vw;
+    transform: translate(0, -50%);
+    box-shadow: -1px 1px 17px 16px rgba(255,0,0,0.7);
+    -webkit-box-shadow: -1px 1px 17px 16px rgba(255,0,0,0.7);
+    -moz-box-shadow: -1px 1px 17px 16px rgba(255,0,0,0.7);
+    border-radius: 50%;
+    transition: ease-in-out 0.7s;
+    background-color: #a30000bd;
+    visibility: hidden;
+}
+
+.morebutton:hover~#red-rings{
+    transition-delay: 0.6s;
+    width: 32vw;
+    height: 32vw;
+    right: 4vw;
+    visibility: visible;
+}
+
+#red-bullet{
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+    background-color: rgba(255,0,0,0.7);
+    position: absolute;
+    top: 438.6px;
+    left: 15%;
+    z-index: -1;
+    transition: ease-in 0.4s;
+    transition-delay: 0.5s;
+}
+
+.morebutton:hover~#red-bullet{
+    transition-delay: 0.1s;
+    left: 85%;
+    z-index: 10;
+}
+
+#home-bottom-gradient{
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    top: 732.2px;
+    transform: translate(0,-100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7344187675070029) 50%, rgba(0,0,0,1) 92%);
+}
+
+/* this is about section */
+
+#about{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(137, 137, 137) 57%, rgb(161, 161, 161) 100%);
+}
+
+.Images-about-socialmedia {
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Images-about-socialmedia img {
+    box-shadow: 0.52vw 0.52vw 0.26vw 0px rgba(0,0,0,0.75);
+    width: 16vw;
+}
+
+.icons-container {
+    margin-top: 1.1vw;
+    padding: 1.15vw;
+    display: flex;
+    column-gap: 1.45vw;
+}
+
+.icons-container a {
+    overflow: hidden;
+    display: inline-flex;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    outline: 0.15vw solid #fff;
+    outline-offset: 0.17vw;
+    transition-property: outline-offset, outline-color;
+    transition-duration: 0.275s;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-container a:hover {
+    outline-offset: 0.4vw;
+    animation: shake 0.55s;
+}
+
+#igc-border:hover {
+    outline: 0.2vw solid #dd1e52;
+}
+
+#gith-border:hover {
+    outline: 0.2vw solid #752d9b;
+}
+
+#xtwc-border:hover {
+    outline: 0.2vw solid rgb(0, 0, 0);
+}
+
+#lndc-border:hover {
+    outline: 0.2vw solid #1883bb;
+}
+
+#ig-icon {
+    width: 4.1vw;
+    height: 4.1vw;
+}
+
+#gith-icon {
+    width: 4.6vw;
+    height: 4.6vw;
+}
+
+#Xtwi-icon {
+    width: 3.45vw;
+    height: 3.45vw;
+}
+
+#linkedin-icon {
+    width: 3.435vw;
+    height: 3.435vw;
+}
+
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+.about-text-container{
+    margin-left: 2vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    cursor: default;
+}
+.about-text-container h1{
+    margin-bottom: 0.3vw;
+}
+
+
+.wrap-background{
+    padding: 2vw;
+    display: flex;
+    background-color: #1d1d1da7;
+    box-shadow: -1px 1px 17px 16px rgba(255,0,0,0.7);
+    -webkit-box-shadow: -1px 1px 17px 16px rgba(255,0,0,0.7);
+    -moz-box-shadow: -1px 1px 17px 16px rgba(255,0,0,0.7);
+}
+
+
+/* this is portofolio section */
+
+#porto{
+    background: linear-gradient(180deg, rgb(161, 161, 161) 0%, rgb(190, 190, 190) 19%, rgb(205, 205, 205) 62%, rgb(255, 255, 255) 100%);
+    padding-top: 90px;
+}
+
+.porto-wrap{
+    height: 100%;
+    width: 50vw;
+}
+
+#wrapform h1,#wraptable h1{
+    color: white;
+    background-color: #bb1818;
+    border-radius: 10px 100px / 120px 100px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    cursor: default;
+}
+
+/*form*/
+
+#wrapform{
+    margin-right: 2.5vw;
+}
+
+#wrapform h1{
+    text-align: center;
+}
+
+.contact-form{
+    background-color: #a30000;
+    display: flex;
+    padding: 2vw;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.contact-form input, #Message{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 7px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#fname, #nname{
+    text-transform: uppercase;
+}
+
+#Message {
+    height: 90px;
+    resize: none;
+}
+#message-label{
+    margin-top: 30px;
+}
+
+
+.contact-form label{
+    color: white;
+    margin-bottom: 10px;
+}
+
+#submit-button{
+    width: 120px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 500;
+}
+
+#submit-button:hover{
+    background-color: #bcbcbc;
+}
+
+/*Table*/
+
+#wraptable{
+    margin-left: 2.5vw;
+}
+
+#wraptable h1{
+    text-align: center;
+}
+
+.table-contact{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    cursor: default;
+}
+  
+.table-contact td, .table-contact th {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
+
+.table-contact tr{
+    transition: ease-in-out 0.5s;
+}
+
+.table-contact tr:hover {background-color: #f2f2f2;}
+  
+.table-contact th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+    background: linear-gradient(180deg, rgba(109,0,0,1) 0%, rgba(160,0,0,1) 20%, rgba(255,0,0,1) 50%, rgba(160,0,0,1) 80%, rgba(109,0,0,1) 100%);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 15px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #a30000;
+}
+
+/* end of content main */
+
+/*footer*/
+footer{
+    padding: 50px;
+    text-align: center;
+    cursor: default;
+    text-transform: uppercase;
+}
