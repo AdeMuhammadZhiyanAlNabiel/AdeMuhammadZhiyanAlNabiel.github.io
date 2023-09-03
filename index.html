@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link id="css-link" rel="stylesheet" href="./style/desktop-styles.css">
+    <script src="./script/devicedetect.js"></script>
+</head>
+
+<body>
+
+    <header id="mainHeader">
+            <div class="head-id-pp">
+                <a href="#" class="navigation-bar-icon">
+                    <img src="./images/profile.jpeg" alt="profilepic">
+                </a>
+                <p>Revou Student ID 6834744</p>
+            </div>
+            <nav class="navigation-bar-link">
+                <a class="navigation-button" title="Google.com" href="#home">Home</a>
+                <a class="navigation-button" title="Google.com" href="#about">About</a>
+                <a class="navigation-button" title="Google.com" href="#porto">Contact Me</a>
+            </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="wrapper">
+            <div class="content-home">
+                <h1>Hi, I'm Zhiyan</h1>
+                <h3>From Section Jayapura</h3>
+                <p>I am a student from the Informatics Department, Tanjungpura University.<br> And now enrolled in revou study independent program</p>
+                <a class="morebutton" href="#about-wrapnav">More</a>
+                <div id="red-rings"></div>
+                <div id="home-img"></div>
+                <div id="red-bullet"></div>
+            </div>
+            <div id="home-bottom-gradient"></div>
+        </section>
+        
+        <section id="about" class="wrapper">
+            <div id="about-wrapnav" style="top:756.2px; position:absolute;"></div>
+            <div class="wrap-background">
+                <div class="Images-about-socialmedia">
+                    <img src="./images/Img-Me.JPG" alt="">
+                    <div class="icons-container">
+                        <a id="igc-border" title="Instagram" href="#about"><img id="ig-icon" src="./images/ig-logo.png" alt="Instagram"></a>
+                        <a id="gith-border" title="GitHub" href="#about"><img id="gith-icon" src="./images/Github-Logo.png" alt="Github"></a>
+                        <a id="xtwc-border" title="Twitter (X)" href="#about"><img id="Xtwi-icon" src="./images/twitter-x-logo.jpg" alt="Twitter"></a>
+                        <a id="lndc-border" title="LinkedIn" href="#about"><img id="linkedin-icon" src="./images/linkedin-logo.png" alt="Linkedin"></a>
+                    </div>
+                </div>
+                <div class="about-text-container">
+                    <h1>Hi There !</h1>
+                    <p>My name is Ade Muhammad Zhiyan Al Nabiel, a student currently pursuing my education at Tanjungpura University. With a strong passion for self-development in the world of information technology, I would like to share a brief overview of my background and experiences.<br>
+                        <br>
+                        From the early days of my education at Tanjungpura University, I developed an interest in the field of software engineering and data analysis. The synergy between my technical abilities and creativity has enabled me to explore various facets of the world of information technology. At present, I am engaged in an intriguing independent study alongside Revou Company.<br>
+                        <br>
+                        My current focus lies primarily in the roles of Software Engineer and Data Analyst. I possess a deep affection for programming and software development. I believe that programming is an art of creating effective and efficient solutions to a multitude of challenges. Additionally, my interest in data analysis allows me to weave stories behind the numbers, providing valuable insights for informed decision-making.<br>
+                        <br>
+                        Learning with Revou Company, I have gained invaluable opportunities to learn from seasoned professionals in the technology industry. The challenging projects I have undertaken have honed my technical skills and enhanced my understanding of how technology and data can create a positive impact in the business world.<br>
+                        <br>
+                        I am tremendously enthusiastic about further developing my potential and making a meaningful contribution in the realm of information technology. With a blend of academic background, a high zest for learning, and practical experience, I am confident that I can be a valuable asset to future teams and projects.<br>
+                        <br>
+                        Thank you for taking the time to read this brief introduction. I hope to have the opportunity to discuss further how I can contribute to your projects or team.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="porto" class="wrapper">
+            <div class="porto-wrap" id="wrapform">
+                <h1>Contact Me !</h1>
+                <form class="contact-form">
+
+                    <label>Full Name</label>
+                    <input type="text" id="fname" name="fname" onkeydown="return /[a-zA-Z]/i.test(event.key)">
+                    
+                    <label>Nick Name</label>
+                    <input type="text" id="nname" name="nname" onkeydown="return /[a-zA-Z]/i.test(event.key)">
+
+                    <label>Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label id="message-label">Message</label>
+                    <textarea id="Message" name="Message"></textarea>
+
+                    <input id="submit-button" type="submit" value="Send Message">
+                </form>
+            </div>
+
+            <div class="porto-wrap" id="wraptable">
+                <h1>My Skills and Mastery</h1>
+                <table class="table-contact">
+                    <tr>
+                    <th style="width: 30%;">Skill</th>
+                    <th style="width: 35%;">Mastery</th>
+                    <th style="width: 35%;">Passionate</th>
+                    </tr>
+
+                    <tr>
+                    <td>Python</td>
+                    <td>
+                        <div class="skill-bar" title="6 out of 10">
+                            <div class="skill-level" style="width: 60%;"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="skill-bar" title="8 out of 10">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td>Dart-Flutter</td>
+                    <td>
+                        <div class="skill-bar" title="5 out of 10">
+                            <div class="skill-level" style="width: 50%;"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="skill-bar" title="9 out of 10">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td>HTML-CSS</td>
+                    <td>
+                        <div class="skill-bar" title="5 out of 10">
+                            <div class="skill-level" style="width: 50%;"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="skill-bar" title="10 out of 10">
+                            <div class="skill-level" style="width: 100%;"></div>
+                        </div>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td>Javascript</td>
+                    <td>
+                        <div class="skill-bar" title="2 out of 10">
+                            <div class="skill-level" style="width: 20%;"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="skill-bar" title="8 out of 10">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td>C++</td>
+                    <td>
+                        <div class="skill-bar" title="2 out of 10">
+                            <div class="skill-level" style="width: 20%;"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="skill-bar" title="9 out of 10">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td>Java</td>
+                    <td>
+                        <div class="skill-bar" title="5 out of 10">
+                            <div class="skill-level" style="width: 50%;"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="skill-bar" title="7 out of 10">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </td>
+                    </tr>
+
+                </table>
+              </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h1>Your Device : <span id="device"></span></h1>
+    </footer>
+
+    <script src="./script/home.js"></script>
+    
+</body>
+
+</html>
